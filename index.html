@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Uma declaração de amor para a pessoa mais especial do mundo."
+    />
+    <title>Para você, meu amor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand" aria-label="Página inicial">
+          <span class="brand-mark">❤</span>
+          <span>Meu Amor</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="#story">Nossa história</a>
+          <a href="#gallery">Fotos</a>
+          <a href="#reasons">Motivos</a>
+          <a href="#promise">Promessa</a>
+          <a href="#love">Te amo</a>
+        </nav>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-bloom">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Para a pessoa mais chatinha desse mundo</p>
+            <h1>Você é meu amor e minha felicidade. Eu te lobo.</h1>
+            <p class="subtitle">
+              Hoje e sempre, quero te dizer que eu te amo para todo o sempre. Estou cada dia
+              aprendendo mais a te entender e a te respeitar. Sempre estou aqui para tudo o que precisar.
+            </p>
+            <div class="hero-actions">
+              <a href="#story" class="btn btn-primary">Ler nossa história</a>
+              <a href="#reasons" class="btn btn-secondary">Ver o que eu gosto em você</a>
+              <button class="btn btn-love" id="loveBurstBtn" type="button">Te amo demais</button>
+            </div>
+
+            <ul class="hero-metrics" aria-label="Dados do meu coração">
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="floating-hearts" aria-hidden="true"></div>
+            <div class="love-card" id="loveCard">
+              <div class="card-glow"></div>
+              <div class="photo-frame">
+                <div class="heart-mark" id="heartBurstTarget">❤</div>
+              </div>
+              <div class="love-text">
+                <span class="mini-label">Minha pessoa favorita</span>
+                <h2>Você</h2>
+                <p>O melhor presente da minha vida.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section section-alt">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Nosso álbum</p>
+            <h2>As fotos que guardo com carinho no meu coração.</h2>
+          </div>
+
+          <div class="gallery-grid reveal" aria-label="Fotos e vídeo do casal">
+            <button class="memory-card" type="button" data-src="images/IMG_5745.JPG" data-title="Juntos em qualquer aventura" data-alt="Casal junto ao ar livre">
+              <img src="images/IMG_5745.JPG" alt="Casal junto ao ar livre" />
+            </button>
+            <button class="memory-card" type="button" data-src="images/IMG_5612.JPG" data-title="Nosso melhor sorriso" data-alt="Casal em uma selfie divertida">
+              <img src="images/IMG_5612.JPG" alt="Casal em uma selfie divertida" />
+            </button>
+            <button class="memory-card" type="button" data-src="images/IMG_5772.JPG" data-title="Beijos e risadas" data-alt="Casal abraçado em um momento divertido">
+              <img src="images/IMG_5772.JPG" alt="Casal abraçado em um momento divertido" />
+            </button>
+            <button class="memory-card" type="button" data-src="images/IMG_5773.JPG" data-title="O melhor lugar é ao seu lado" data-alt="Casal fazendo caretas para a câmera">
+              <img src="images/IMG_5773.JPG" alt="Casal fazendo caretas para a câmera" />
+            </button>
+            <button class="memory-card" type="button" data-src="images/DBXI3384.jpg" data-title="Mais um momento ao seu lado" data-alt="Foto do casal">
+              <img src="images/DBXI3384.jpg" alt="Foto do casal" />
+            </button>
+            <button class="memory-card" type="button" data-src="images/IMG_5759.jpg" data-title="Uma lembrança só nossa" data-alt="Foto do casal">
+              <img src="images/IMG_5759.jpg" alt="Foto do casal" />
+            </button>
+            <button class="memory-card" type="button" data-src="images/cami.JPG" data-title="Cami" data-alt="Foto de Cami">
+              <img src="images/cami.JPG" alt="Foto de Cami" />
+            </button>
+            <button class="memory-card memory-video" type="button" data-src="images/IMG_E5713.mp4" data-poster="images/video-poster.jpg" data-kind="video" data-title="Nosso vídeo">
+              <img src="images/video-poster.jpg" alt="Capa do vídeo do casal" />
+              <span class="video-play" aria-hidden="true">▶</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <dialog class="memory-viewer" aria-label="Visualização da memória">
+        <button class="viewer-close" type="button" aria-label="Fechar">×</button>
+        <button class="viewer-nav viewer-prev" type="button" aria-label="Memória anterior">‹</button>
+        <div class="viewer-content"></div>
+        <button class="viewer-nav viewer-next" type="button" aria-label="Próxima memória">›</button>
+      </dialog>
+
+      <section id="reasons" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">O que me faz te amar tanto</p>
+            <h2>Você é a razão do meu sorriso aparecer sem convite.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <div class="icon">✦</div>
+              <h3>Seu sorriso</h3>
+              <p>Seu sorriso é o tipo de coisa que quebra qualquer conversa e acaba com os desentendimentos.</p>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="icon">❤</div>
+              <h3>Seu jeito</h3>
+              <p>Eu amo o seu jeito marrentinho, porque sei que no fundo você é a pessoa mais sentimental desse mundo.</p>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="icon">✧</div>
+              <h3>Seu abraço</h3>
+              <p>É o lugar mais quentinho e cheiroso que conheço. Seu abraço tem o poder de me deixar melhor no meu pior dia possível.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="section section-alt">
+        <div class="container split-layout">
+          <div class="split-copy reveal">
+            <p class="eyebrow">Nossa história</p>
+            <h2>Você entrou na minha vida e mudou tudo.</h2>
+            <p>
+              Quando te conheci, eu tinha muita dificuldade para me relacionar e confiar nas pessoas.
+              Mas você foi me mostrando que nem sempre ficar sozinho é a melhor opção e que eu posso,
+              sim, amar e confiar nas pessoas.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="promise" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">A minha promessa</p>
+            <h2>A minha promessa</h2>
+          </div>
+
+          <div class="promise-message reveal">
+            <p>A minha promessa é que vou fazer de tudo para dar certo. Vou fazer de tudo para a gente ter uma relação boa com seus pais, para que você se sinta segura para me contar tudo o que sente e também demonstrar tudo o que sente. Vou te respeitar e, acima de tudo, vou aprendendo a te amar cada vez mais, para todo o sempre.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quote-section">
+        <div class="container">
+          <div class="quote-block reveal">
+            <p>A pergunta que não quer calar...</p>
+            <h2>Quer namorar comigo?</h2>
+          </div>
+        </div>
+      </section>
+
+      <section id="love" class="section cta-section">
+        <div class="container cta-panel response-panel reveal">
+          <div class="response-heading">
+            <p class="eyebrow">Agora quero saber de você</p>
+            <h2>Qual é a sua resposta?</h2>
+          </div>
+          <div class="response-options" aria-label="Escolha sua resposta">
+            <button class="response-button response-yes" type="button" data-answer="yes" aria-pressed="false">Sim 💚</button>
+            <button class="response-button response-no" type="button" data-answer="no" aria-pressed="false">Não ❤️</button>
+          </div>
+          <p class="response-message" id="responseMessage" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Com todo meu amor</p>
+        <div class="footer-links">
+          <a href="#story">Nossa história</a>
+          <a href="#gallery">Fotos</a>
+          <a href="#reasons">Motivos</a>
+          <a href="#promise">Promessa</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="celebration-overlay" id="celebrationOverlay" role="dialog" aria-modal="true" aria-labelledby="celebrationTitle" aria-hidden="true">
+      <div class="celebration-burst" aria-hidden="true"></div>
+      <div class="celebration-content">
+        <span class="celebration-kicker">Começou a nossa história 💚</span>
+        <h2 id="celebrationTitle">Parabéns!<br />Você está namorando!<br /><span>Pode beijá-lo! 😘</span></h2>
+        <button class="celebration-close" id="celebrationClose" type="button">Continuar no site</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
