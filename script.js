@@ -156,6 +156,10 @@ function playNoButtonPrank() {
   }, 950);
 }
 
+noButton?.addEventListener('pointerenter', (event) => {
+  if (event.pointerType === 'mouse') playNoButtonPrank();
+});
+
 function celebrateYes() {
   if (!responsePanel || !celebrationOverlay || !celebrationBurst) return;
 
